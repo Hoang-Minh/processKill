@@ -8,7 +8,7 @@ namespace SolutionConsole
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World! = " + (args != null ? args[0] : "NO args"));
+            Console.WriteLine("Hello World! = " + (args != null && args.Length > 0 ? args[0] : "NO args"));
             Solution.ProcessUtils.Main(args);
         }
     }
